@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shiv Shakti Enterprise - Garments | Sodepur Kolkata</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap');
+body{font-family:'Outfit',sans-serif; scroll-behavior:smooth}
+.glass{backdrop-filter: blur(16px); background: rgba(255,255,255,0.9);}
+</style>
+</head>
+<body class="bg-[#f8f7f5]">
+
+<header class="sticky top-0 z-50 glass border-b">
+<div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+<div class="flex items-center gap-2">
+<div class="w-10 h-10 bg-black text-white grid place-items-center font-bold rounded-lg">SSE</div>
+<div>
+<h1 class="font-bold text-lg leading-none">Shiv Shakti Enterprise</h1>
+<p class="text-[10px] text-gray-500 tracking-widest">TRADE LICENSE • UDYAM REGISTERED • SODEPUR</p>
+</div>
+</div>
+<button onclick="openCart()" class="relative bg-black text-white px-5 py-2.5 rounded-full font-semibold">
+<i class="fa-solid fa-bag-shopping"></i> Cart <span id="cartCount" class="bg-white text-black text-xs px-1.5 py-0.5 rounded-full ml-1">0</span>
+</button>
+</div>
+</header>
+
+<section class="max-w-7xl mx-auto px-4 mt-6 grid md:grid-cols-3 gap-4">
+<div class="md:col-span-2 bg-black text-white rounded-[24px] p-8 md:p-12 relative overflow-hidden">
+<h2 class="text-5xl md:text-7xl font-bold leading-[0.9]">GARMENT<br>WHOLESALE<br><span class="text-zinc-400">& RETAIL</span></h2>
+<p class="mt-4 text-zinc-300 max-w-md">Trading in T-Shirt, Sarees, Imported Jeans & Other Premium Garments. Sodepur, Panihati, Kolkata.</p>
+<div class="mt-6 flex gap-3">
+<a href="#products" class="bg-white text-black px-6 py-3 rounded-full font-semibold">Shop Now</a>
+<a href="https://wa.me/918777892438" class="border border-white px-6 py-3 rounded-full">WhatsApp: 8777892438</a>
+</div>
+<div class="absolute -right-10 -bottom-10 text-[160px] opacity-10 font-bold">SSE</div>
+</div>
+<div class="bg-white rounded-[24px] p-6 border">
+<h3 class="font-bold">Business Verified <i class="fa-solid fa-circle-check text-green-500"></i></h3>
+<div class="mt-4 space-y-3 text-sm">
+<div class="flex justify-between border-b pb-2"><span>Trade License</span><span class="font-bold">Registered</span></div>
+<div class="flex justify-between border-b pb-2"><span>Udyam</span><span class="font-bold">MSME Certified</span></div>
+<div class="flex justify-between border-b pb-2"><span>Location</span><span class="font-bold">Sodepur, Kolkata</span></div>
+<div class="pt-2"><p class="font-semibold">Address:</p><p class="text-gray-600">Sodepur, Panihati, Kolkata, West Bengal - 700110</p>
+<p class="mt-2 font-semibold">WhatsApp Business:</p><p class="text-lg font-bold">+91 8777892438</p>
+</div>
+</div>
+</div>
+</section>
+
+<div class="max-w-7xl mx-auto px-4 mt-6 flex gap-3 overflow-auto">
+<button onclick="filterCat('all')" class="catBtn bg-black text-white px-6 py-2 rounded-full whitespace-nowrap">All Products</button>
+<button onclick="filterCat('tshirt')" class="catBtn bg-white border px-6 py-2 rounded-full whitespace-nowrap">T-Shirt</button>
+<button onclick="filterCat('saree')" class="catBtn bg-white border px-6 py-2 rounded-full whitespace-nowrap">Sarees</button>
+<button onclick="filterCat('jeans')" class="catBtn bg-white border px-6 py-2 rounded-full whitespace-nowrap">Imported Jeans</button>
+</div>
+
+<section id="products" class="max-w-7xl mx-auto px-4 mt-6 grid grid-cols-2 md:grid-cols-4 gap-4"></section>
+
+<!-- TERMS & REFUND SECTION -->
+<section id="policies" class="max-w-7xl mx-auto px-4 mt-16 grid md:grid-cols-2 gap-6">
+<div id="terms" class="bg-white rounded-[24px] p-8 border">
+<h2 class="text-2xl font-bold">Terms & Conditions</h2>
+<p class="text-xs text-gray-500 mt-1">Last Updated: 14 Oct 2026 | Shiv Shakti Enterprise</p>
+<div class="mt-6 space-y-3 text-[14px] leading-relaxed text-zinc-700">
+<p><b>1. Business:</b> Trade License & Udyam Registered firm, Sodepur Panihati Kolkata - 700110.</p>
+<p><b>2. Pricing:</b> Prices in INR, subject to market change. Wholesale & Retail rates differ.</p>
+<p><b>3. Orders:</b> All WhatsApp orders to 8777892438 subject to stock availability.</p>
+<p><b>4. Product:</b> Color may slightly vary due to photo lighting & mobile screen. Check size chart before order.</p>
+<p><b>5. Jurisdiction:</b> All disputes subject to Kolkata, WB courts.</p>
+</div>
+</div>
+
+<div id="refund" class="bg-white rounded-[24px] p-8 border border-amber-200">
+<h2 class="text-2xl font-bold">Refund & Return Policy <span class="text-xs bg-yellow-100 px-2 py-1 rounded-full">GARMENT POLICY</span></h2>
+<div class="mt-6 space-y-3 text-[14px] leading-relaxed text-zinc-700">
+<p><b>Return Window: 48 Hours</b> - Delivery ke 48hr me WhatsApp 8777892438 pe 360° opening video bhejna compulsory hai.</p>
+<p><b>✅ Return Hoga:</b> Wrong product/size, Manufacturing defect, Transit damage (video proof).</p>
+<p><b>❌ Return Nahi Hoga:</b> Size pasand nahi aaya, Color ka halka difference, Wash/use ke baad, Offer items.</p>
+<p><b>Process:</b> 1) Video bhejo > 2) Approval 24hr me > 3) Courier to Sodepur > 4) Exchange/Refund 3-5 days me UPI se.</p>
+<p class="bg-amber-50 p-3 rounded-lg"><b>Note:</b> COD me ₹80-120 courier charge deduct hoga. Wholesale bulk orders are NON-REFUNDABLE, only exchange.</p>
+</div>
+</div>
+</section>
+
+<div id="cartDrawer" class="fixed inset-0 z-[60] hidden">
+<div class="absolute inset-0 bg-black/40" onclick="closeCart()"></div>
+<div class="absolute right-0 top-0 h-full w-full max-w-[420px] bg-white shadow-2xl p-6 flex flex-col">
+<div class="flex justify-between items-center"><h3 class="text-2xl font-bold">Your Cart</h3><button onclick="closeCart()" class="w-9 h-9 bg-zinc-100 rounded-full"><i class="fa-solid fa-xmark"></i></button></div>
+<div id="cartItems" class="mt-6 flex-1 overflow-auto space-y-4"></div>
+<div class="border-t pt-4">
+<div class="flex justify-between font-bold text-lg"><span>Total</span><span id="cartTotal">₹0</span></div>
+<button onclick="checkoutWA()" class="mt-4 w-full bg-[#25D366] text-white py-4 rounded-full font-bold text-lg"><i class="fa-brands fa-whatsapp"></i> Order on WhatsApp</button>
+<p class="text-[11px] text-center mt-2 text-gray-500">Order goes to +91 8777892438</p>
+</div>
+</div>
+</div>
+
+<footer class="mt-12 bg-black text-white py-10">
+<div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-8 text-sm">
+<div><h4 class="font-bold text-lg">Shiv Shakti Enterprise</h4><p class="mt-2 text-zinc-400">Wholesale & Retail Garment Trader. T-Shirt, Sarees, Imported Jeans. Sodepur, Panihati, Kolkata.</p>
+<div class="mt-4 flex gap-3"><a href="#terms" class="underline">Terms</a><a href="#refund" class="underline">Refund Policy</a><a href="#policies" class="underline">Shipping</a></div>
+</div>
+<div><h4 class="font-bold">Verified</h4><p class="mt-2 text-zinc-400">Trade License: Registered<br>Udyam Registration: MSME Certified<br>Address: Sodepur, Panihati, Kolkata - 700110</p></div>
+<div><h4 class="font-bold">Contact</h4><p class="mt-2 text-zinc-400">WhatsApp Business: +91 8777892438<br>Business Hours: 10AM - 9PM<br>Owner: themetalhub</p></div>
+</div>
+<div class="text-center text-[11px] text-zinc-500 mt-8">© 2026 Shiv Shakti Enterprise - All Rights Reserved</div>
+</footer>
+
+<script>
+const products = [
+{id:1,name:"Premium Cotton T-Shirt",price:299,cat:"tshirt",img:"https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500"},
+{id:2,name:"Oversized Street T-Shirt",price:449,cat:"tshirt",img:"https://images.unsplash.com/photo-1562157873-818bc0726f68?w=500"},
+{id:3,name:"Banarasi Silk Saree",price:1850,cat:"saree",img:"https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=500"},
+{id:4,name:"Cotton Printed Saree",price:899,cat:"saree",img:"https://images.unsplash.com/photo-1609357605129-8480d26a6ea6?w=500"},
+{id:5,name:"Imported Baggy Jeans",price:1599,cat:"jeans",img:"https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=500"},
+{id:6,name:"Slim Fit Denim Jeans",price:1299,cat:"jeans",img:"https://images.unsplash.com/photo-1542272604-787c3835535d?w=500"},
+{id:7,name:"Polo T-Shirt Pack of 2",price:699,cat:"tshirt",img:"https://images.unsplash.com/photo-1586790170083-2f9ceadc732d?w=500"},
+{id:8,name:"Georgette Party Saree",price:1450,cat:"saree",img:"https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=500"},
+];
+let cart=[];
+function render(list){
+document.getElementById('products').innerHTML = list.map(p=>`
+<div class="bg-white rounded-[20px] overflow-hidden border group">
+<img src="${p.img}" class="h-[220px] w-full object-cover group-hover:scale-105 transition">
+<div class="p-4">
+<p class="text-[11px] uppercase tracking-widest text-gray-500">${p.cat}</p>
+<h3 class="font-semibold leading-tight mt-1">${p.name}</h3>
+<div class="flex justify-between items-center mt-3">
+<span class="font-bold text-lg">₹${p.price}</span>
+<button onclick="addToCart(${p.id})" class="bg-black text-white px-4 py-2 rounded-full text-sm font-semibold">Add +</button>
+</div>
+</div>
+</div>
+`).join('');
+}
+render(products);
+function filterCat(c){
+document.querySelectorAll('.catBtn').forEach(b=>b.className='catBtn bg-white border px-6 py-2 rounded-full whitespace-nowrap');
+event.target.className='catBtn bg-black text-white px-6 py-2 rounded-full whitespace-nowrap';
+if(c=='all') render(products); else render(products.filter(p=>p.cat==c));
+}
+function addToCart(id){
+const p=products.find(x=>x.id==id);
+const f=cart.find(x=>x.id==id);
+if(f) f.qty++; else cart.push({...p,qty:1});
+updateCart(); openCart();
+}
+function updateCart(){
+document.getElementById('cartCount').innerText=cart.reduce((a,b)=>a+b.qty,0);
+let total=0;
+document.getElementById('cartItems').innerHTML=cart.map(i=>{
+total+=i.price*i.qty;
+return `<div class="flex gap-3 border-b pb-3"><img src="${i.img}" class="w-16 h-16 rounded-lg object-cover"><div class="flex-1"><h4 class="font-semibold text-sm">${i.name}</h4><p class="text-sm">₹${i.price} x ${i.qty}</p></div><button onclick="removeItem(${i.id})" class="text-red-500"><i class="fa-solid fa-trash"></i></button></div>`
+}).join('') || '<p class="text-center text-gray-400 mt-20">Cart is empty</p>';
+document.getElementById('cartTotal').innerText='₹'+total;
+}
+function removeItem(id){cart=cart.filter(x=>x.id!=id); updateCart();}
+function openCart(){document.getElementById('cartDrawer').classList.remove('hidden')}
+function closeCart(){document.getElementById('cartDrawer').classList.add('hidden')}
+function checkoutWA(){
+if(cart.length==0) return alert('Cart empty');
+let total=cart.reduce((a,b)=>a+b.price*b.qty,0);
+let msg=`*New Order - Shiv Shakti Enterprise*%0A%0A`;
+cart.forEach(i=>{msg+=`${i.name} - ₹${i.price} x ${i.qty} = ₹${i.price*i.qty}%0A`});
+msg+=`%0A*Total: ₹${total}*%0A%0A*Customer Name & Address:*%0A[Please type]%0A%0A*Terms Accepted: Yes*`;
+window.open(`https://wa.me/918777892438?text=${msg}`,'_blank');
+}
+</script>
+</body>
+</html>
